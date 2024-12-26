@@ -67,8 +67,8 @@
         }
 
         .post {
-            width: 500px;
-            margin: 20px 0px 1px 20px;
+            width: 400px;
+            margin: 10px 0px 1px 10px;
             padding: 20px;
             box-shadow: 0px 0px 3px 0px transparent;
             background-color: wheat;
@@ -265,36 +265,37 @@
                 <h1 class="display-5 fw-bold">스파르타 푸드파이터</h1>
                 <p class="col-md-8 fs-4">본인만의 맛집을 소개하는 사이트입니다. <br> 맛집을 소개해 주세요!</p>
             </div>
+            <!-- 부트스트랩 인풋 박스 적용-->
+            <div class="post" id="input-card">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">음식 이미지 주소</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="foodTitle" placeholder="영화 제목">
+                    <label for="foodTitle">음식명</label>
+                </div>
+                <div class="input-group mb-3">
+                    <button class="btn btn-outline-secondary" type="button">별점</button>
+                    <select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+                        <option selected>별점 선택</option>
+                        <option value="1">⭐</option>
+                        <option value="2">⭐⭐</option>
+                        <option value="3">⭐⭐⭐</option>
+                        <option value="4">⭐⭐⭐⭐</option>
+                        <option value="5">⭐⭐⭐⭐⭐</option>
+                    </select>
+                </div>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">추천 이유</label>
+                </div>
+                <div class="button2">
+                    <button type="button" class="btn btn-danger" id="addBtn"> 기록하기 </button>
+                </div>
+            </div>
         </div>
-        <!-- 부트스트랩 인풋 박스 적용-->
-        <div class="post" id="input-card">
-            <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">음식 이미지 주소</label>
-            </div>
-            <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="foodTitle" placeholder="영화 제목">
-                <label for="foodTitle">음식명</label>
-            </div>
-            <div class="input-group mb-3">
-                <button class="btn btn-outline-secondary" type="button">별점</button>
-                <select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
-                    <option selected>별점 선택</option>
-                    <option value="1">⭐</option>
-                    <option value="2">⭐⭐</option>
-                    <option value="3">⭐⭐⭐</option>
-                    <option value="4">⭐⭐⭐⭐</option>
-                    <option value="5">⭐⭐⭐⭐⭐</option>
-                </select>
-            </div>
-            <div class="form-floating">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                <label for="floatingTextarea">추천 이유</label>
-            </div>
-            <div class="button2">
-                <button type="button" class="btn btn-danger" id="addBtn"> 기록하기 </button>
-            </div>
-        </div>
+
     </div>
 
 
